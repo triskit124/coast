@@ -1,15 +1,18 @@
 #include <iostream>
 
 #include "coast_engine.h"
+#include "window.h"
 #include "scene.h"
 #include "../render/render.h"
 
 namespace coast {
 
+std::unique_ptr<coast::Window> window;
 std::unique_ptr<coast::Scene> scene;
 
 void init() {
-
+    std::cout << "init" << std::endl;
+    window = std::make_unique<coast::Window>();
 }
 
 void run() {

@@ -6,7 +6,7 @@
 namespace coast::math {
 
 template <typename T>
-std::vector<T> vec_add(const std::vector<T>& a, std::vector<T>& b);
+inline std::vector<T> vec_add(const std::vector<T>& a, std::vector<T>& b);
 
 } // namespace coast
 

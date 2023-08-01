@@ -45,6 +45,7 @@ DOCDIR = doc
 INCDIR = include
 BUILDDIR = build
 SRCDIRS = src\
+		  src/audio\
 		  src/component\
 		  src/core\
 	      src/math\
@@ -53,7 +54,7 @@ SRCDIRS = src\
 
 # define any directories containing header files other than /usr/include
 #
-INCLUDES = -I./$(INCDIR)
+INCLUDES = -I./$(INCDIR) -I~/Documents/C++/SDL/include/
 
 
 # define library paths in addition to /usr/lib
@@ -67,7 +68,7 @@ LFLAGS =
 #   if I want to link in libraries (libx.so or libx.a) I use the -llibname 
 #   option, something like (this will link in libmylib.so and libm.so:
 #
-LIBS =
+LIBS = -lSDL2
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
